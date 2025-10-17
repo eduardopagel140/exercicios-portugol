@@ -4,7 +4,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro vet[11] = { 2, 5, 1, 3, 4, 9, 7, 8, 10, 6, 11 }
+		inteiro vet[11] = { 2, 5, 1, 3, 4, 9, 7, 8, 10, 6, 0 }
 		inteiro i, aux, trocou = 1
 
 		escreva("\n")
@@ -13,7 +13,7 @@ programa
 			trocou = 0
 			para(i = 0; i < 11 - 1; i++)
 			{
-				se(vet[i] > vet[i+1])
+				se(vet[i] < vet[i+1])
 				{
 					aux = vet[i]
 					vet[i] = vet[i+1]
@@ -36,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 232; 
+ * @POSICAO-CURSOR = 373; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
